@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Address Book Form</title>
+    <link rel="stylesheet" href="../css/addressBookCSS.css">
+</head>
+
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/logo.png" alt="">
+            <div>
+                <span class="address-text">ADDRESS</span><br>
+                <span class="book-text">BOOK</span>
+            </div>
+        </div>
+    </header>
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save();return false">
+            <div class="form-head ">
+                <div class="head-name">address form</div>
+                <img class="close-symbol" src="../assets/cancel.jpeg" alt="">
+            </div>
+            <div class="row-content">
+                <label class="label text" for="fullname">
+                    Full Name
+                </label>
+            </div>
+            <div>
+                <input class="input" type="text" id="fullname" name="fullname" placeholder="Your Full name..." required>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="phonenumber">
+                    Phone Number
+                </label>
+            </div>
+            <div>
+                <input class="input" type="text" id="phonenumber" name="phonenumber" placeholder="Your Phone Number..."
+                    required>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="address">
+                    Address
+                </label>
+            </div>
+            <div>
+                <textarea class="input-address" type="text" id="address" name="address"
+                    style="height: 100px;font-family:'Times New Roman', Times, serif ;" placeholder="Your Address..."
+                    required></textarea>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="city">
+                    city
+                </label>
+                <label class="label text-internal-state" for="state">
+                    state
+                </label>
+                <label class="label text-internal-zipcode" for="zipcode">
+                    zipcode
+                </label>
+            </div>
+            <div class="row-content">
+                <select name="city" id="city" for="city" class="option">
+                    <option value="select city..">select city..</option>
+                    <option value="Amaravathi">Amaravathi</option>
+                    <option value="port blair">Port blair</option>
+                    <option value="Itanagar">Itanagar</option>
+                    <option value="Dispur">Dispur</option>
+                    <option value="patna">Patna</option>
+                    <option value="panaji">Panaji</option>
+                    <option value="gandhinagar">Gandhinagar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="shimla">Shimla</option>
+                    <option value="ranchi">Ranchi</option>
+                    <option value="bengaluru">Bengaluru</option>
+                    <option value="thiruvanthapuram">Thiruvanthapuram</option>
+                    <option value="bhopal">Bhopal</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="imphal">Imphal</option>
+                    <option value="shillong">Shillong</option>
+                    <option value="aizawl">Aizawl</option>
+                    <option value="kohima">Kohima</option>
+                    <option value="bhubaneswar">Bhubaneswar</option>
+                    <option value="jaipur">Jaipur</option>
+                    <option value="gangtok">Gangtok</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="agartala">Agartala</option>
+                    <option value="lucknow">Lucknow</option>
+                    <option value="dehradun">Dehradun</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="daman">Daman</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="kavaratti">Kavaratti</option>
+                    <option value="pondicherry">Pondicherry</option>
+                </select>
+                <select name="state" id="state" for="state" class="option">
+                    <option value="select state..">select state..</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+                <input class="input-zipcode" type="text" id="zipcode" name="zipcode" required>
+            </div>
+            <div class="row-content">
+                <button type="submit" class="button submitButton" id="AddButton"><span>Add</span></button>
+                <button type="reset" class="resetButton button">
+                    <a href="../pages/addressBook.html"><span>Reset</span></a></button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
